@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abril Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Abril Zapata</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Abril Zapata</div>
+
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">Sobre mí</a></li>
@@ -25,124 +21,171 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">Hola, mi nombre es</p>
-      <h1>Abril</h1>
-      <h2>Estudiante de Ingeniería Industrial | Consultora Funcional SAP HCM | Gestión de RRHH & Procesos | Optimización y Mejora Continua</h2>
-      <p class="description">
-        Bienvenidos a mi portafolio. Aquí encontrarán los proyectos en los que estoy trabajando actualmente,
-        además de las tecnologías con las que he trabajado a lo largo del tiempo.
-      </p>
+  <main>
 
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary-btn">Ver proyectos</a>
-        <a href="#contact" class="btn secondary-btn">Contáctame</a>
+    <!-- PORTADA / HERO -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <span class="hero-kicker">HOLA, MI NOMBRE ES</span>
+
+        <h1>Abril</h1>
+
+        <h2>
+          Estudiante de Ingeniería Industrial | Analista de RRHH (SAP)
+        </h2>
+
+        <p>
+          Bienvenidos a mi portfolio. Aquí presento proyectos que reflejan mi interés
+          por integrar Recursos Humanos, procesos y tecnología, fortaleciendo mi
+          aprendizaje continuo en programación, análisis de datos y soluciones orientadas al usuario.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary-btn">Ver proyectos</a>
+          <a href="#contact" class="btn secondary-btn">Contáctame</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="section-header">
-      <h2>Sobre mí</h2>
-    </div>
-
-    <div class="about-card">
-      <p>
-        Soy Abril, estudiante de Ingeniería Industrial y Consultora Funcional SAP HCM con experiencia operativa en el módulo de Administración de Personal (PA), gestionando altas, bajas y modificaciones de empleados dentro del sistema, así como el mantenimiento y actualización de datos organizativos (OM). Cuento con experiencia en el área de People, donde trabajo directamente con procesos administrativos y operativos, comprendiendo el impacto que una correcta configuración y gestión en SAP tiene en la organización. Me desempeño como líder de equipo en proyectos de mejora continua aplicando metodología 5S, fortaleciendo mis habilidades de análisis, organización y optimización de procesos.
-      </p>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <div class="section-header">
-      <span class="section-kicker">Portfolio</span>
-      <h2>Mis proyectos destacados</h2>
-      <p>
-        Esta es una selección de proyectos e iniciativas que reflejan mi aprendizaje continuo con diferentes tecnologías,
-        aplicadas a Recursos Humanos, mejora continua y soluciones tecnológicas para stakeholders y también a objetivos educativos.
-      </p>
-    </div>
-
-    <div class="projects-grid">
-
-      <article class="project-card">
-        <div class="project-topline"></div>
-        <span class="project-label">Analytics</span>
-        <h3>People Analytics Dashboard</h3>
+    <!-- SOBRE MÍ -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <span class="section-kicker">SOBRE MÍ</span>
+        <h2>Procesos, personas y tecnología</h2>
         <p>
-          Dashboard orientado al análisis de datos de RRHH para apoyar la toma de decisiones
-          mediante métricas, tendencias de dotación y visualización de información clave.
+          Soy estudiante de Ingeniería Industrial y me desempeño como Analista de RRHH (SAP).
+          Me interesa desarrollar soluciones que integren procesos de personas, análisis
+          de información y herramientas tecnológicas orientadas a la mejora continua.
+        </p>
+      </div>
+
+      <div class="about-card">
+        <h3>Mi enfoque profesional</h3>
+        <p>
+          Busco fortalecer mi perfil funcional y técnico mediante proyectos prácticos
+          que me permitan aprender programación, automatizaciones, visualización de datos
+          y diseño de soluciones útiles para los usuarios.
         </p>
 
+        <h3>Actualmente aprendiendo</h3>
         <div class="project-tags">
+          <span>Automatizaciones</span>
           <span>Power BI</span>
-          <span>HR Metrics</span>
-          <span>Data Analysis</span>
-        </div>
-
-        <a href="people-analytics.html" class="project-link">View Project →</a>
-      </article>
-
-      <article class="project-card">
-        <div class="project-topline"></div>
-        <span class="project-label">Educación</span>
-        <h3>Calculadora científica en Python</h3>
-        <p>
-          Proyecto educativo desarrollado en Python con interfaz gráfica inspirada en una calculadora científica real,
-          incluyendo operaciones avanzadas y visualización de funciones matemáticas.
-        </p>
-
-        <div class="project-tags">
-          <span>Python</span>
-          <span>Ingeniería</span>
-          <span>Programación</span>
-        </div>
-
-        <a href="calculator.html" class="project-link">View Project →</a>
-      </article>
-
-      <article class="project-card">
-        <div class="project-topline"></div>
-        <span class="project-label">FinTech</span>
-        <h3>Conversor de divisas (En Construccion)</h3>
-        <p>
-          Aplicación orientada a convertir importes entre diferentes monedas,
-          utilizando tasas de cambio en tiempo real mediante una API externa.
-        </p>
-
-        <div class="project-tags">
-          <span>Vibe Code</span>
-          <span>Python</span>
-          <span>Tkinter</span>
+          <span>SAP HCM</span>
           <span>Flask</span>
-          <span>API</span>
-          <span>Proyecto FinTech</span>
+          <span>Tkinter</span>
+          <span>Data Analytics</span>
         </div>
+      </div>
+    </section>
 
-        <a href="currency-converter.html" class="project-link">View Project →</a>
-      </article>
+    <!-- PROYECTOS -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <span class="section-kicker">PORTFOLIO</span>
+        <h2>Mis proyectos destacados</h2>
+        <p>
+          Esta es una selección de proyectos e iniciativas que reflejan mi aprendizaje
+          continuo con diferentes tecnologías, aplicadas a Recursos Humanos, análisis
+          de datos y soluciones digitales.
+        </p>
+      </div>
 
-    </div>
-  </section>
+      <div class="projects-grid">
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="section-header">
-      <span class="section-kicker">Contáctame</span>
-      <h2>011-1533005337</h2>
-      <p>Hablemos de IA Generativa, SAP HCM, Recursos Humanos, Ingeniería Industrial y Mejora Continua.</p>
-    </div>
+        <!-- PEOPLE ANALYTICS -->
+        <article class="project-card">
+          <div class="project-topline"></div>
+          <span class="project-label">Analytics</span>
 
-    <div class="contact-card">
-      <p><strong>Email:</strong> abrilzapataa@gmail.com</p>
-      <p><strong>LinkedIn:</strong> www.linkedin.com/in/abril-zapata-42188b16a</p>
-      <p><strong>País:</strong> Argentina</p>
-    </div>
-  </section>
+          <h3>People Analytics Dashboard</h3>
 
+          <p>
+            Dashboard orientado al análisis de datos de RRHH para apoyar la toma de
+            decisiones mediante métricas, tendencias de dotación y visualización de
+            información clave.
+          </p>
+
+          <div class="project-tags">
+            <span>Power BI</span>
+            <span>HR Metrics</span>
+            <span>Data Analysis</span>
+          </div>
+
+          <a href="people-analytics.html" class="project-link">View Project →</a>
+        </article>
+
+        <!-- CALCULADORA -->
+        <article class="project-card">
+          <div class="project-topline"></div>
+          <span class="project-label">Educación</span>
+
+          <h3>Calculadora científica en Python</h3>
+
+          <p>
+            Proyecto educativo desarrollado en Python con interfaz gráfica inspirada
+            en una calculadora científica real, incluyendo operaciones avanzadas y
+            visualización de funciones matemáticas.
+          </p>
+
+          <div class="project-tags">
+            <span>Python</span>
+            <span>PyQt6</span>
+            <span>Matplotlib</span>
+          </div>
+
+          <a href="calculator.html" class="project-link">View Project →</a>
+        </article>
+
+        <!-- CONVERSOR DE DIVISAS -->
+        <article class="project-card">
+          <div class="project-topline"></div>
+          <span class="project-label">FinTech</span>
+
+          <h3>Conversor de divisas <small>(En construcción)</small></h3>
+
+          <p>
+            Aplicación orientada a convertir importes entre diferentes monedas,
+            utilizando tasas de cambio en tiempo real mediante una API externa.
+          </p>
+
+          <div class="project-tags">
+            <span>Python</span>
+            <span>Tkinter</span>
+            <span>Flask</span>
+            <span>API</span>
+          </div>
+
+          <a href="currency-converter.html" class="project-link">View Project →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <span class="section-kicker">CONTACTO</span>
+        <h2>Hablemos</h2>
+        <p>
+          Hablemos de IA Generativa, SAP HCM, Recursos Humanos, Ingeniería Industrial y Mejora Continua
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <p><strong>Email:</strong> abrilzapataa@gmail.com</p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/abril-zapata-42188b16a/" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/abril-zapata-42188b16a
+          </a>
+        </p>
+        <p><strong>País:</strong> Argentina</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
