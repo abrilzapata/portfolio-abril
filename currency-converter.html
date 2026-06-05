@@ -1,148 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Conversor de Divisas en tiempo real</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conversor de Divisas | Abril Zapata</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="converter-page">
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="logo">Abril Zapata</div>
-  <ul class="nav-links">
-    <li><a href="index.html">← Volver al portfolio</a></li>
-  </ul>
-</nav>
+  <nav class="navbar">
+    <a href="index.html" class="logo">Abril Zapata</a>
 
-<!-- HERO DEL PROYECTO -->
-<section class="section">
-
-  <div class="section-header">
-    <span class="section-kicker">Proyecto</span>
-    <h2>Conversor de divisas</h2>
-    <p>
-      El proyecto consiste en el desarrollo progresivo de un conversor de divisas en Python, comenzando con una versión inicial ejecutada por consola, luego evolucionando hacia una aplicación de escritorio con Tkinter y finalmente hacia una interfaz web desarrollada con Flask.
-      La aplicación permitirá ingresar un importe, seleccionar una moneda de origen y una moneda de destino, para obtener el valor convertido utilizando tasas de cambio en tiempo real mediante una API externa.
-    </p>
-  </div>
-
-  <div class="about-card">
-
-    <h3>📌 Descripción</h3>
-    <p>
-      Este proyecto busca construir una solución práctica para convertir importes entre diferentes monedas, aplicando conceptos de programación, consumo de APIs, validación de datos y diseño de interfaces.
-      La primera versión se desarrollará en CMD/consola, enfocada en la lógica principal de conversión. Luego se incorporará una interfaz gráfica de escritorio con Tkinter, mejorando la experiencia de usuario. Finalmente, se desarrollará una versión web con Flask, permitiendo ejecutar el conversor desde un navegador.
-      El proyecto tiene un enfoque incremental, donde cada etapa mejora la anterior y permite comparar distintos tipos de implementación: consola, aplicación de escritorio y aplicación web.
-      
-    </p>
-
-    <h3>🎯 Objetivo</h3>
-    <p>
-      Desarrollar una aplicación funcional de conversión de divisas que permita practicar programación en Python, integración con APIs externas y diseño de interfaces de usuario, evolucionando desde una solución básica por consola hasta una aplicación web más completa y visual.
-    </p>
-
-    <h3>⚙️ Tecnologías utilizadas</h3>
-    <ul>
-      <li>Python</li>
-      <li>CMD/Consola (primera versión para validar la lógica de conversión)</li>
-      <li>Flask (framework para desarrollar la versión web.)</li>
-      <li>Tkinter (Interfaz gráfica de escritorio)</li>
-      <li>Request (librería para consumir la API de tasas de cambio.)</li>
-      <li>JSON (Formato de respuesta utilizado por la API)</li>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">Sobre mí</a></li>
+      <li><a href="index.html#projects">Proyectos</a></li>
+      <li><a href="index.html#contact">Contacto</a></li>
     </ul>
+  </nav>
 
-    <h3>🚀 Funcionalidades principales</h3>
-    <ul>
-      <li>Ingreso de importe a convertir</li>
-      <li>Selección de moneda de origen</li>
-      <li>Selección de moneda de destino</li>
-      <li>Versión inicial por consola.</li>
-      <li>Versión de escritorio con Tkinter.</li>
-      <li>Versión web con Flask.</li>
-    </ul>
+  <main class="converter-main">
 
-    <h3>🧠 Aprendizajes</h3>
-    <ul>
-      <li>Desarrollo de interfaces gráficas en Python</li>
-      <li>Consumir una API externa desde Python.</li>
-      <li>Integración de librerías externas</li>
-      <li>Diseño de aplicaciones orientadas al usuario</li>
-    </ul>
+    <section class="converter-hero">
+      <div class="converter-hero-content">
+        <span class="section-kicker">PROYECTO WEB</span>
+        <h1>Conversor de Divisas</h1>
+        <p>
+          Aplicación web desarrollada para convertir importes entre diferentes monedas
+          mediante una interfaz simple, clara y orientada al usuario.
+        </p>
 
-    <br>
+        <div class="converter-badges">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>UX</span>
+        </div>
+      </div>
+    </section>
 
-    <a href="https://github.com/abrilzapata/python-calculator" target="_blank" class="btn primary-btn">
-      Ver código en GitHub
-    </a>
+    <section class="converter-section">
+      <div class="converter-card">
 
-  </div>
+        <div class="converter-card-header">
+          <div>
+            <span class="section-kicker">CONVERSIÓN</span>
+            <h2>Convertí un importe</h2>
+          </div>
+          <span class="converter-status">Demo educativa</span>
+        </div>
 
-</section>
+        <div class="converter-form">
 
-<!-- CÓMO FUNCIONA -->
-<section class="section">
+          <div class="form-group">
+            <label for="amount">Importe</label>
+            <input
+              type="number"
+              id="amount"
+              min="0"
+              step="0.01"
+              placeholder="Ejemplo: 100"
+            />
+          </div>
 
-  <div class="section-header">
-    <span class="section-kicker">Funcionamiento</span>
-    <h2>Cómo funciona el sistema</h2>
-    <p>
-      La calculadora combina una interfaz gráfica con lógica matemática para interpretar,
-      resolver y visualizar operaciones de forma dinámica.
-    </p>
-  </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fromCurrency">Moneda origen</label>
+              <select id="fromCurrency">
+                <option value="ARS">ARS - Peso argentino</option>
+                <option value="USD">USD - Dólar estadounidense</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="BRL">BRL - Real brasileño</option>
+                <option value="CLP">CLP - Peso chileno</option>
+                <option value="UYU">UYU - Peso uruguayo</option>
+              </select>
+            </div>
 
-  <div class="about-card">
+            <button type="button" class="swap-btn" id="swapCurrencies" aria-label="Invertir monedas">
+              ⇄
+            </button>
 
-    <h3>1. Ingreso de operaciones</h3>
-    <p>
-      El usuario interactúa con una interfaz visual similar a una calculadora científica real,
-      ingresando operaciones matemáticas mediante botones personalizados.
-    </p>
+            <div class="form-group">
+              <label for="toCurrency">Moneda destino</label>
+              <select id="toCurrency">
+                <option value="USD">USD - Dólar estadounidense</option>
+                <option value="ARS">ARS - Peso argentino</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="BRL">BRL - Real brasileño</option>
+                <option value="CLP">CLP - Peso chileno</option>
+                <option value="UYU">UYU - Peso uruguayo</option>
+              </select>
+            </div>
+          </div>
 
-    <h3>2. Procesamiento lógico</h3>
-    <p>
-      La aplicación interpreta la expresión ingresada, transforma la sintaxis matemática cuando es necesario
-      y ejecuta el cálculo utilizando lógica programada en Python.
-    </p>
+          <button type="button" class="btn primary-btn converter-btn" id="convertBtn">
+            Convertir
+          </button>
 
-    <h3>3. Visualización del resultado</h3>
-    <p>
-      El resultado se muestra en una pantalla tipo LCD, manteniendo una experiencia visual coherente
-      con el diseño de una calculadora física.
-    </p>
+          <div class="converter-result" id="conversionResult">
+            Ingresá un importe y seleccioná las monedas para ver el resultado.
+          </div>
 
-    <h3>4. Graficación de funciones</h3>
-    <p>
-      El sistema también permite ingresar funciones matemáticas y visualizarlas gráficamente,
-      integrando cálculo numérico y representación visual mediante Matplotlib.
-    </p>
+          <p class="converter-note">
+            Las tasas utilizadas son demostrativas y no representan valores financieros en tiempo real.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  </div>
+    <section class="converter-section converter-grid">
 
-</section>
+      <article class="info-card">
+        <span class="info-icon">🎯</span>
+        <h3>Objetivo del proyecto</h3>
+        <p>
+          Practicar lógica de programación, manipulación del DOM, validación de formularios
+          y diseño de interfaces web aplicadas a un caso de uso cotidiano.
+        </p>
+      </article>
 
-<!-- GALERÍA DEL PROYECTO -->
-<section class="section">
+      <article class="info-card">
+        <span class="info-icon">⚙️</span>
+        <h3>Funcionalidades</h3>
+        <ul>
+          <li>Ingreso de importe a convertir.</li>
+          <li>Selección de moneda origen y destino.</li>
+          <li>Conversión estimada con tasas internas.</li>
+          <li>Botón para invertir monedas.</li>
+          <li>Validación de datos ingresados.</li>
+        </ul>
+      </article>
 
-  <div class="section-header">
-    <span class="section-kicker">Galería</span>
-    <h2>Vista del proyecto</h2>
-    <p>Capturas reales de la aplicación en funcionamiento.</p>
-  </div>
+      <article class="info-card">
+        <span class="info-icon">🧩</span>
+        <h3>Tecnologías utilizadas</h3>
+        <ul>
+          <li>HTML5 para la estructura.</li>
+          <li>CSS3 para diseño visual responsive.</li>
+          <li>JavaScript para la lógica de conversión.</li>
+          <li>Diseño orientado a experiencia de usuario.</li>
+        </ul>
+      </article>
 
-  <div class="project-gallery">
+    </section>
 
-    <img src="images/calculator-main.png" alt="Interfaz principal de la calculadora">
+    <section class="converter-section">
+      <div class="next-steps-card">
+        <h2>Próximas mejoras</h2>
+        <p>
+          Como evolución futura, el proyecto puede integrarse con una API de cotizaciones
+          para consultar tasas actualizadas y ampliar el conjunto de monedas disponibles.
+        </p>
 
-    <img src="images/calculator-operation.png" alt="Ejemplo de operación resuelta">
+        <a href="index.html#projects" class="btn secondary-btn">
+          Volver al portfolio
+        </a>
+      </div>
+    </section>
 
-    <img src="images/calculator-graph.png" alt="Gráfico de funciones matemáticas">
+  </main>
 
-  </div>
-
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
