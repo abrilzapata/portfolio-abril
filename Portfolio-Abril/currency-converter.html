@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conversor de Divisas | Abril Zapata</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="project-detail-page">
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Abril Zapata</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">Sobre mí</a></li>
+      <li><a href="index.html#projects">Proyectos</a></li>
+      <li><a href="index.html#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main class="project-detail-main">
+
+    <!-- HERO -->
+    <section class="project-detail-hero">
+      <span class="section-kicker">PROYECTO PYTHON / API / WEB</span>
+
+      <h1>Conversor de Divisas</h1>
+
+      <p>
+        Aplicación desarrollada en Python para convertir importes entre diferentes monedas.
+        El proyecto fue construido en tres versiones: consola, interfaz gráfica con Tkinter
+        y aplicación web con Flask.
+      </p>
+
+      <div class="project-detail-tags">
+        <span>Python</span>
+        <span>Tkinter</span>
+        <span>Flask</span>
+        <span>API</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+    </section>
+
+    <!-- DESCRIPCIÓN -->
+    <section class="project-detail-section">
+      <div class="project-detail-card">
+        <h2>Descripción del proyecto</h2>
+
+        <p>
+          El <strong>Conversor de Divisas</strong> es un proyecto desarrollado para practicar
+          la creación de soluciones en Python desde distintos enfoques: ejecución en consola,
+          interfaz gráfica de escritorio con Tkinter y versión web con Flask.
+        </p>
+
+        <p>
+          La aplicación permite convertir importes entre diferentes monedas, ingresando un valor,
+          seleccionando una moneda de origen y una moneda de destino, y obteniendo como resultado
+          una conversión estimada.
+        </p>
+
+        <p>
+          El objetivo del proyecto fue aplicar lógica de programación, validación de datos,
+          consumo de información externa y diseño de interfaces orientadas al usuario.
+        </p>
+      </div>
+    </section>
+
+    <!-- VERSIONES -->
+    <section class="project-detail-section">
+      <h2 class="section-title">Versiones desarrolladas</h2>
+
+      <div class="versions-grid">
+
+        <article class="version-card">
+          <span class="version-icon">💻</span>
+          <h3>Versión en consola</h3>
+          <p>
+            Primera versión del proyecto, ejecutada desde terminal. Permite ingresar datos,
+            seleccionar monedas y visualizar el resultado directamente en consola.
+          </p>
+        </article>
+
+        <article class="version-card">
+          <span class="version-icon">🖥️</span>
+          <h3>Versión Tkinter</h3>
+          <p>
+            Segunda versión con interfaz gráfica de escritorio, orientada a mejorar la experiencia
+            del usuario mediante campos, botones y visualización clara del resultado.
+          </p>
+        </article>
+
+        <article class="version-card">
+          <span class="version-icon">🌐</span>
+          <h3>Versión Flask</h3>
+          <p>
+            Tercera versión del proyecto, desarrollada como aplicación web con Flask,
+            permitiendo interactuar con el conversor desde el navegador.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CAPTURAS -->
+    <section class="project-detail-section">
+      <h2 class="section-title">Capturas del proyecto</h2>
+
+      <p class="section-description">
+        El proyecto fue desarrollado en tres etapas: una primera versión ejecutada desde consola,
+        una segunda versión con interfaz gráfica en Tkinter y una tercera versión web utilizando Flask.
+      </p>
+
+      <!-- CONSOLA -->
+      <div class="screenshots-group">
+        <h3>Versión en consola</h3>
+
+        <p>
+          Primera versión del conversor, ejecutada desde terminal. Permite seleccionar moneda origen,
+          moneda destino, ingresar un importe y visualizar el resultado directamente en consola.
+        </p>
+
+        <div class="screenshots-grid screenshots-grid-console">
+
+          <article class="screenshot-card">
+            <img
+              src="images/conversor-consola-1.png"
+              alt="Conversor de divisas en consola - selección de moneda origen"
+            />
+            <div class="screenshot-content">
+              <h4>Selección de moneda origen</h4>
+              <p>Listado de monedas disponibles e ingreso de la moneda inicial.</p>
+            </div>
+          </article>
+
+          <article class="screenshot-card">
+            <img
+              src="images/conversor-consola-2.png"
+              alt="Conversor de divisas en consola - selección de moneda destino"
+            />
+            <div class="screenshot-content">
+              <h4>Selección de moneda destino</h4>
+              <p>Confirmación de moneda origen y selección de la moneda de destino.</p>
+            </div>
+          </article>
+
+          <article class="screenshot-card">
+            <img
+              src="images/conversor-consola-3.png"
+              alt="Conversor de divisas en consola - resultado de conversión"
+            />
+            <div class="screenshot-content">
+              <h4>Resultado de conversión</h4>
+              <p>Consulta del tipo de cambio y visualización del resultado final.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- FLASK -->
+      <div class="screenshots-group">
+        <h3>Versión web con Flask</h3>
+
+        <p>
+          Versión web del proyecto desarrollada con Flask, con una interfaz visual inspirada en el concepto
+          Ocean Exchange y endpoints disponibles para consultar monedas y conversiones.
+        </p>
+
+        <div class="screenshots-grid screenshots-grid-two">
+
+          <article class="screenshot-card screenshot-card-large">
+            <img
+              src="images/conversor-flask-1.png"
+              alt="Conversor de divisas web desarrollado con Flask"
+            />
+            <div class="screenshot-content">
+              <h4>Formulario web</h4>
+              <p>Interfaz web para seleccionar monedas, ingresar importe e iniciar la conversión.</p>
+            </div>
+          </article>
+
+          <article class="screenshot-card screenshot-card-large">
+            <img
+              src="images/conversor-flask-2.png"
+              alt="Conversor de divisas web con resultado desarrollado en Flask"
+            />
+            <div class="screenshot-content">
+              <h4>Resultado web</h4>
+              <p>Visualización del importe convertido, tipo de cambio utilizado y fecha de consulta.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- TKINTER -->
+      <div class="screenshots-group">
+        <h3>Versión de escritorio con Tkinter</h3>
+
+        <p>
+          Versión con interfaz gráfica de escritorio desarrollada con Tkinter, orientada a mejorar la experiencia
+          del usuario mediante campos, listas desplegables, botones y resultado visual.
+        </p>
+
+        <div class="screenshots-grid screenshots-grid-two">
+
+          <article class="screenshot-card screenshot-card-large">
+            <img
+              src="images/conversor-tkinter-1.png"
+              alt="Conversor de divisas con interfaz Tkinter"
+            />
+            <div class="screenshot-content">
+              <h4>Interfaz inicial</h4>
+              <p>Pantalla inicial del conversor con selección de monedas y campo de importe.</p>
+            </div>
+          </article>
+
+          <article class="screenshot-card screenshot-card-large">
+            <img
+              src="images/conversor-tkinter-2.png"
+              alt="Conversor de divisas con interfaz Tkinter y resultado"
+            />
+            <div class="screenshot-content">
+              <h4>Resultado en escritorio</h4>
+              <p>Resultado de conversión mostrado dentro de la interfaz gráfica de escritorio.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FUNCIONALIDADES -->
+    <section class="project-detail-section">
+      <div class="project-detail-card">
+        <h2>Funcionalidades principales</h2>
+
+        <ul class="project-list">
+          <li>Conversión de importes entre diferentes monedas.</li>
+          <li>Ingreso de monto a convertir.</li>
+          <li>Selección de moneda origen y moneda destino.</li>
+          <li>Validación de datos ingresados por el usuario.</li>
+          <li>Versión ejecutable desde consola.</li>
+          <li>Versión con interfaz gráfica en Tkinter.</li>
+          <li>Versión web desarrollada con Flask.</li>
+          <li>Presentación clara del resultado de conversión.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TECNOLOGÍAS -->
+    <section class="project-detail-section">
+      <div class="project-detail-card">
+        <h2>Tecnologías utilizadas</h2>
+
+        <div class="tech-tags">
+          <span>Python</span>
+          <span>Tkinter</span>
+          <span>Flask</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>API de cotizaciones</span>
+          <span>Lógica de programación</span>
+          <span>Validación de datos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- APRENDIZAJES -->
+    <section class="project-detail-section">
+      <div class="project-detail-card">
+        <h2>Aprendizajes obtenidos</h2>
+
+        <p>
+          Este proyecto permitió reforzar conocimientos sobre estructuras de control,
+          funciones, manejo de datos, validación de entradas, diseño de interfaces
+          y construcción de aplicaciones web básicas.
+        </p>
+
+        <p>
+          También permitió comprender cómo una misma lógica de negocio puede adaptarse
+          a diferentes formatos de uso: consola, aplicación de escritorio y aplicación web.
+        </p>
+      </div>
+    </section>
+
+    <!-- BOTÓN VOLVER -->
+    <section class="project-detail-section project-back-section">
+      <a href="index.html#projects" class="btn secondary-btn">Volver al portfolio</a>
+    </section>
+
+  </main>
+
+</body>
+</html>

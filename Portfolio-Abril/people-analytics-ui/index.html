@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People Analytics Dashboard UI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="app-header">
+    <div>
+      <span class="kicker">People Analytics</span>
+      <h1>Dashboard </h1>
+      <p>
+        Pantalla interactiva para visualizar indicadores de Recursos Humanos:
+        resumen ejecutivo, composición de dotación y movimientos mensuales.
+      </p>
+    </div>
+
+    <div class="header-card">
+      <span>Portfolio Project</span>
+      <strong>Abril Zapata</strong>
+    </div>
+  </header>
+
+  <main class="app-shell">
+
+    <aside class="sidebar">
+      <button class="tab-button active" data-target="overview">
+        Resumen ejecutivo
+      </button>
+      <button class="tab-button" data-target="composition">
+        Composición
+      </button>
+      <button class="tab-button" data-target="trends">
+        Movimientos
+      </button>
+    </aside>
+
+    <section class="dashboard-panel">
+
+      <article id="overview" class="dashboard-view active">
+        <div class="panel-title">
+          <div>
+            <span class="section-kicker">Vista 01</span>
+            <h2>Resumen ejecutivo</h2>
+          </div>
+          <p>Indicadores clave de dotación, rotación y evolución.</p>
+        </div>
+
+        <img src="images/people-dashboard-main.png" alt="Dashboard principal de People Analytics">
+      </article>
+
+      <article id="composition" class="dashboard-view">
+        <div class="panel-title">
+          <div>
+            <span class="section-kicker">Vista 02</span>
+            <h2>Composición de dotación</h2>
+          </div>
+          <p>Análisis por área, género, edad y antigüedad.</p>
+        </div>
+
+        <img src="images/people-dashboard-metrics.png" alt="Dashboard de métricas de People Analytics">
+      </article>
+
+      <article id="trends" class="dashboard-view">
+        <div class="panel-title">
+          <div>
+            <span class="section-kicker">Vista 03</span>
+            <h2>Movimientos mensuales</h2>
+          </div>
+          <p>Seguimiento de headcount, altas y bajas durante el año.</p>
+        </div>
+
+        <img src="images/people-dashboard-trends.png" alt="Dashboard de tendencias de People Analytics">
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Datos ficticios utilizados con fines demostrativos para portfolio.</p>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll(".tab-button");
+    const views = document.querySelectorAll(".dashboard-view");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        const target = button.dataset.target;
+
+        buttons.forEach(btn => btn.classList.remove("active"));
+        views.forEach(view => view.classList.remove("active"));
+
+        button.classList.add("active");
+        document.getElementById(target).classList.add("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
